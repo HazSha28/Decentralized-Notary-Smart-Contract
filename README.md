@@ -79,7 +79,8 @@ Document Verification Result
 ## 📸 Test Evidence
 Complete Remix IDE test evidence is available here:
 
-[View Remix Test Evidence PDF](./Remix-Test-Evidence-Decentralized-Notary.pdf)
+[View Remix Test Evidence PDF](./Decentralized_Notary_Test_Evidence_with_DApp_Screenshots.pdf)
+
 The PDF contains screenshots of:
 - Contract compilation
 - Contract deployment
