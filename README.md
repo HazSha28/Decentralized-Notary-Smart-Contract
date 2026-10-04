@@ -91,7 +91,7 @@ Document Verification Result
 
 Complete Remix IDE test evidence is available here:
 
-[View Remix Test Evidence PDF](documentation/Remix-Test-Evidence.pdf)
+[View Remix Test Evidence PDF](./Remix-Test-Evidence-Decentralized-Notary.pdf)
 
 The PDF contains screenshots of:
 - Contract compilation
@@ -101,3 +101,51 @@ The PDF contains screenshots of:
 - Duplicate registration prevention
 - Unregistered document verification
 - Transaction and deployment details
+
+## 🔒 Security Considerations
+
+- Document hashes are stored on-chain for integrity verification.
+- Duplicate document registration is prevented.
+- The actual document content is not stored on the blockchain.
+- The owner's blockchain address is recorded during registration.
+- The contract validates that an empty hash cannot be registered.
+
+## ✅ Advantages
+
+- Provides tamper-evident document verification.
+- Prevents duplicate registration of the same document hash.
+- Provides transparent ownership information.
+- Stores a permanent registration timestamp.
+- Reduces the need for a centralized notary authority.
+- Protects document privacy by storing only the cryptographic hash.
+
+## ⚠️ Limitations
+
+- The actual document is not stored on the blockchain.
+- Users must securely retain their original documents.
+- Blockchain transactions may involve gas costs on public networks.
+- The system currently does not provide a user interface.
+- Anyone with the document hash can check its registration status.
+
+## 🚀 Future Enhancements
+
+- Develop a web-based frontend for document registration and verification.
+- Integrate MetaMask for wallet authentication.
+- Support IPFS for decentralized document storage.
+- Add role-based access control.
+- Deploy the contract on an Ethereum testnet.
+- Add QR-code-based document verification.
+- Integrate automated document hash generation.
+
+## 📁 Project Structure
+
+```text
+Decentralized-Notary-Smart-Contract/
+│
+├── contracts/
+│   └── DecentralizedNotary.sol
+│
+├── Remix-Test-Evidence-Decentralized-Notary.pdf
+│
+└── README.md
+
