@@ -121,6 +121,8 @@ The PDF contains screenshots of:
 - Integrate automated document hash generation.
 
 ## 📁 Project Structure
+
+```text
 Decentralized-Notary-Smart-Contract/
 │
 ├── contracts/
