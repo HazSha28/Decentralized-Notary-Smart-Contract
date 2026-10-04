@@ -1,15 +1,9 @@
 # Decentralized Notary Smart Contract
 
 ## 📌 Project Overview
-
-The Decentralized Notary Smart Contract is a blockchain-based system for registering and verifying digital documents.
-
-Instead of storing the actual document on the blockchain, the system stores a unique cryptographic hash of the document along with the owner's blockchain address and registration timestamp.
-
-The smart contract prevents duplicate document registration and allows users to verify whether a document has already been registered.
+The Decentralized Notary Smart Contract is a blockchain-based system for registering and verifying digital documents.Instead of storing the actual document on the blockchain, the system stores a unique cryptographic hash of the document along with the owner's blockchain address and registration timestamp.The smart contract prevents duplicate document registration and allows users to verify whether a document has already been registered.
 
 ## 🎯 Objectives
-
 - Register digital documents using their unique hash.
 - Record the document owner's blockchain address.
 - Store the registration timestamp.
@@ -18,7 +12,6 @@ The smart contract prevents duplicate document registration and allows users to 
 - Demonstrate the use of Solidity and blockchain technology for digital notarization.
 
 ## 🛠️ Technologies Used
-
 - Solidity ^0.8.20
 - Ethereum Blockchain
 - Remix IDE
@@ -29,7 +22,6 @@ The smart contract prevents duplicate document registration and allows users to 
 ### 1. registerDocument()
 
 Registers a document using its `bytes32` hash.
-
 The function:
 
 - Validates the document hash.
@@ -39,7 +31,6 @@ The function:
 - Emits a `DocumentRegistered` event.
 
 ### 2. verifyDocument()
-
 Verifies a document using its hash.
 
 The function returns:
@@ -61,7 +52,6 @@ For every registered document, the smart contract stores:
 
 ## 🔄 System Workflow
 
-```text
 Digital Document
        ↓
 Generate Document Hash
@@ -79,7 +69,6 @@ verifyDocument()
 Document Verification Result
 
 ## 🧪 Test Cases and Results
-
 | Test Case | Input | Expected Result | Actual Result | Status |
 |---|---|---|---|---|
 | Register new document | New document hash | Document registered | Successfully registered | ✅ Pass |
@@ -88,11 +77,9 @@ Document Verification Result
 | Verify unregistered document | New/unregistered hash | Exists = false | False, zero address, timestamp 0 | ✅ Pass |
 
 ## 📸 Test Evidence
-
 Complete Remix IDE test evidence is available here:
 
 [View Remix Test Evidence PDF](./Remix-Test-Evidence-Decentralized-Notary.pdf)
-
 The PDF contains screenshots of:
 - Contract compilation
 - Contract deployment
@@ -103,7 +90,6 @@ The PDF contains screenshots of:
 - Transaction and deployment details
 
 ## 🔒 Security Considerations
-
 - Document hashes are stored on-chain for integrity verification.
 - Duplicate document registration is prevented.
 - The actual document content is not stored on the blockchain.
@@ -111,7 +97,6 @@ The PDF contains screenshots of:
 - The contract validates that an empty hash cannot be registered.
 
 ## ✅ Advantages
-
 - Provides tamper-evident document verification.
 - Prevents duplicate registration of the same document hash.
 - Provides transparent ownership information.
@@ -120,7 +105,6 @@ The PDF contains screenshots of:
 - Protects document privacy by storing only the cryptographic hash.
 
 ## ⚠️ Limitations
-
 - The actual document is not stored on the blockchain.
 - Users must securely retain their original documents.
 - Blockchain transactions may involve gas costs on public networks.
@@ -128,7 +112,6 @@ The PDF contains screenshots of:
 - Anyone with the document hash can check its registration status.
 
 ## 🚀 Future Enhancements
-
 - Develop a web-based frontend for document registration and verification.
 - Integrate MetaMask for wallet authentication.
 - Support IPFS for decentralized document storage.
@@ -138,8 +121,6 @@ The PDF contains screenshots of:
 - Integrate automated document hash generation.
 
 ## 📁 Project Structure
-
-```text
 Decentralized-Notary-Smart-Contract/
 │
 ├── contracts/
